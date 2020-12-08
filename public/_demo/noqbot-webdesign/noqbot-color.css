@@ -1,0 +1,171 @@
+/*=============================================
+			Theme Color
+=============================================*/
+a,
+p a,
+p a:hover,
+a:hover,
+a:focus,
+a:active,
+.noqbot-stars span:after,
+.noqbot-btn,
+.noqbot-btn:hover,
+.noqbot-navigation ul li a:hover,
+.noqbot-socialicons li a:hover,
+.noqbot-socialicons li a:hover i,
+.noqbot-addnav ul li a:hover,
+.noqbot-addnav ul li a:hover i,
+.noqbot-cartcontent ul li .noqbot-product-detail h3 a:hover,
+.noqbot-navigation > div > ul > li > ul > li:hover > a,
+.noqbot-navigation > div > ul > li > ul > li > a:hover,
+.noqbot-navigation ul li ul li.noqbot-dropdown a:before,
+.noqbot-slider-content h1,
+.noqbot-home-slider .noqbot-btn-next,
+.noqbot-home-slider .noqbot-btn-prev,
+.noqbot-upcomingmatch-counter .noqbot-section-heading h2 span,
+.noqbot-counter h4,
+.noqbot-team-nameplusstatus h4 a,
+.noqbot-themebtnnext:hover span,
+.noqbot-themebtnprev:hover span,
+.noqbot-statistic h3,
+.noqbot-videobox figure figcaption h2,
+.noqbot-player:hover .noqbot-playcontent h3 a,
+.noqbot-pointstable-slider .noqbot-themebtnnext span,
+.noqbot-pointstable-slider .noqbot-themebtnprev span,
+.noqbot-postmetadata li a:hover,
+.noqbot-footernav ul li a:hover,
+.noqbot-productcontent h4 a:hover,
+.noqbot-contactinfo li i,
+.noqbot-navigation span,
+.noqbot-oursponsers .noqbot-upcomingmatch .noqbot-match .noqbot-box span,
+.noqbot-breadcrumb,
+.noqbot-breadcrumb li a,
+.noqbot-player-slider .noqbot-postimg .noqbot-img-hover h3 a:hover,
+.noqbot-widget h3,
+.noqbot-playerslider .noqbot-themebtnnext span,
+.noqbot-playerslider .noqbot-themebtnprev span,
+.noqbot-detail li i,
+.noqbot-matchdate span,
+.noqbot-oldmatchresult .noqbot-matchdetail .noqbot-theme-tag,
+.noqbot-oldmatchresult .noqbot-matchdetail h4 span,
+.noqbot-oldmatchresult:hover .noqbot-matchdetail h4,
+.noqbot-theme-tag time,
+.noqbot-btnreply:hover,
+.noqbot-btnreply:hover:before,
+.noqbot-ticket h4 span,
+.noqbot-ticket .noqbot-theme-tag,
+.noqbot-ticket:hover h4,
+.noqbot-pagination li a:hover i,
+.noqbot-fixturecounter .noqbot-section-heading h2 span,
+.noqbot-authorinfo .noqbot-section-heading h3,
+.noqbot-shopcontent .noqbot-contentbox h2,
+.noqbot-shopviewnav li a:hover i,
+.noqbot-shopviewnav li.noqbot-active a i,
+.noqbot-btncart:hover i,
+.noqbot-productquentity .minus:hover,
+.noqbot-productquentity .plus:hover,
+.noqbot-productinfo .noqbot-description ul li:before,
+.noqbot-officeaddressnav .noqbot-contactinfo li i,
+.noqbot-officeaddressnav .item:hover .noqbot-theme-tag,
+.noqbot-officeaddressnav .owl-item.synced .item .noqbot-theme-tag,
+.noqbot-navigation ul > li.active,
+.noqbot-testimonial-slider .noqbot-themebtnnext span,
+.noqbot-btnnav i,
+.noqbot-comming-sooncounter .timer_box:first-child h1
+
+
+
+/*********table color*******/
+
+
+
+
+
+
+
+{color: #00cfa2;}
+
+
+.noqbot-theme-tag h4 span {
+	color:#084876;
+}
+
+/*=============================================
+			Theme Background Color
+=============================================*/
+.noqbot-btn:after,
+.noqbot-navigation ul li + li:before,
+.noqbot-addnav ul li + li:before,
+.noqbot-socialicons li + li:before,
+.noqbot-matchresult:after,
+.noqbot-bgboxtwo,
+.noqbot-tag:hover,
+.noqbot-player-slider .noqbot-postimg .noqbot-img-hover .noqbot-theme-tag,
+.noqbot-widget ul li a:hover i,
+.ui-slider-horizontal .ui-slider-range,
+.noqbot-tags-widget ul li .noqbot-btn:hover,
+.noqbot-player-data .noqbot-playcontent .noqbot-theme-tag,
+.noqbot-themetabnav li a:hover,
+.noqbot-themetabnav li.active a,
+.noqbot-oldmatchresult:hover .noqbot-matchdate,
+.noqbot-oldmatchresult:hover .noqbot-matchdetail .noqbot-theme-tag,
+.noqbot-ticket:hover .noqbot-theme-tag,
+.noqbot-ticket:hover .noqbot-matchdate,
+.noqbot-tags-social .noqbot-btn:hover,
+.noqbot-authorinfo .noqbot-theme-tag,
+.noqbot-shopbanner:before,
+.noqbot-limitedoffer:after,
+.noqbot-shopcontent .noqbot-contentbox .noqbot-theme-tag,
+.noqbot-productinfo .noqbot-theme-tag,
+.noqbot-checkbox input[type=checkbox]:checked + label:before,
+.noqbot-officeaddressnav .noqbot-theme-tag,
+.noqbot-officeaddressnav .item:hover,
+.noqbot-officeaddressnav .owl-item.synced .item,
+.noqbot-filterbale-nav li a:hover,
+.noqbot-filterbale-nav li a.active,
+.noqbot-project figure figcaption .noqbot-theme-tag,
+.noqbot-btnnav span,
+.noqbot-btnnav span:after,
+.noqbot-btnnav span:before,
+.noqbot-btnnav:before,
+.noqbot-sidenav .noqbot-nav ul li.noqbot-cart a em:before,
+.noqbot-topaddnav .navbar-header .navbar-toggle,
+.noqbot-nav .navbar-header .navbar-toggle,
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.points-table tbody tr th,
+
+
+/*********table color*******/
+.top-head
+
+
+
+
+
+{background:#00cfa2;}
+/*=============================================
+			Theme Border Color
+=============================================*/
+.noqbot-home-slider .noqbot-btn-next span:first-child,
+.noqbot-home-slider .noqbot-btn-prev span:first-child,
+.noqbot-matchresult:before,
+.noqbot-tag:hover,
+.noqbot-btn,
+.noqbot-tags-widget ul li .noqbot-btn:hover,
+.noqbot-playerslider .noqbot-themebtnnext,
+.noqbot-playerslider .noqbot-themebtnprev,
+.noqbot-home-slidertwobg:after,
+.noqbot-themetabnav li a:hover,
+.noqbot-themetabnav li.active a,
+.noqbot-checkbox input[type=checkbox]:checked + label:before,
+.noqbot-filterbale-nav li a:hover,
+.noqbot-filterbale-nav li a.active,
+.noqbot-testimonial-slider .noqbot-themebtnnext,
+.noqbot-testimonial-slider .noqbot-themebtnprev,
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover{border-color: #00cfa2;}
+/*=============================================
+			Stroke Color
+=============================================*/
+.noqbot-btn rect {stroke: #00cfa2;}

@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'Regular';
+    src:url('font/robotocondensed/RobotoCondensed-Regular.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Bold';
+    src:url('font/robotocondensed/RobotoCondensed-Bold.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Light';
+    src:url('font/robotocondensed/RobotoCondensed-Light.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Semibold';
+    src:url('font/robotocondensed/RobotoCondensed-Bold.ttf') format('opentype');
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.schedule:hover > .logo_filter, .cliga_standings .standings_box tbody tr:hover > .logo_filter img {
+    filter: brightness(0) invert(1) !important;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+select::-ms-expand{
+    display:none;
+}
+
+.flexAlignCenter{
+    display:flex;
+    align-content:center;
+    justify-content:center;
+}
+
+.cliga_standings{
+    padding: 20px 0;
+    padding-bottom: 40px;
+    background: #edeff2;
+    font-family: 'Open sans', sans-serif;
+}
+
+.cliga_standings .h1, .cliga_standings .h2, .cliga_standings .h3, .cliga_standings .h4, .cliga_standings .h5, .cliga_standings .h6, .cliga_standings h1, .cliga_standings h2, .cliga_standings h3, .cliga_standings h4, .cliga_standings h5, .cliga_standings h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.cliga_standings .container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow:hidden;
+    max-width: 1280px;
+}
+
+.cliga_standings .selectbox.absolute_select {
+    position: absolute;
+    right: 14px;
+    top: 26px;
+}
+
+.cliga_standings select.absolute_select, .round-selector select {
+    border: 0;
+    background-color: #f5f5f6;
+    color: #383737;
+    font-size: 20px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    padding: 0 30px 0 0;
+    outline: none;
+    background: #edeff2 url(/images/down_arrow4.png) no-repeat 0 0 !important;
+    background-position: right center !important;
+    cursor: pointer;
+}
+
+.cliga_standings .container_title {
+    color: #565d57;
+    border-bottom: 3px solid #bfc3c8;
+    font-family: Bold;
+    font-family: Semibold;
+    font-size: 30px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.cliga_standings td.standing_bold {
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.cliga_standings .three-box-container, .cliga_standings .two-box-container {
+    margin: 0 -10px;
+}
+
+.cliga_standings .three-box-container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cliga_standings .three-box-container .box {
+    width: 33.33%;
+    display: block;
+    float: left;
+    vertical-align: top;
+    padding: 0 10px;
+    border-right: 1px solid #cbcdd0;
+}
+
+.cliga_standings .three-box-container .box:last-child, .cliga_standings .two-box-container .box:last-child, .cliga_standings .one-box-container .box:last-child {
+    border-right: 0;
+}
+
+.cliga_standings .box_header {
+    position: relative;
+    padding-bottom: 5px;
+    overflow:hidden;
+}
+
+.cliga_standings .box_title {
+    float: left;
+    color: #94989d;
+    font-family: Bold;
+    font-family: Semibold;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.cliga_standings .gray_border {
+    border-bottom: 1px solid #e0e2e5 !important;
+}
+
+.cliga_standings .schedule_box .turn_number {
+    text-align: center;
+    border-bottom: 1px solid #b4bbc2;
+    margin-top: 29px;
+    position: relative;
+}
+
+.cliga_standings .turn_number span {
+    color: #565d67;
+    font-size: 16px;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.cliga_standings .turn_number span.buyticket {
+    height: 30px;
+    width: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://szurkoloiklub.mlsz.hu/img/jegy_dark.png);
+    height: 13px;
+    width: 30px;
+    background-position: bottom center;
+    background-size: initial;
+    background-image: url(/images/ticket.new.inverse.png);
+}
+
+.cliga_standings .schedule {
+    border-bottom: 1px solid #b4bbc2;
+    padding: 6px 0;
+    font-size: 13px;
+    display: table;
+    height: 60px;
+    width: 100%;
+    table-layout: fixed;
+    position: relative;
+}
+
+.cliga_standings .schedule:hover {
+    background-color: #071c6e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cliga_standings .schedule > div {
+    display: table-cell;
+    vertical-align: middle;
+    float: none !important;
+}
+
+.cliga_standings .schedule_box .home_team, .cliga_standings .schedule_box .away_team {
+    float: left;
+    width: 30%;
+    overflow: hidden;
+    padding: 0px 0;
+}
+
+.cliga_standings .schedule_box .home_team {
+    text-align: right;
+}
+
+.cliga_standings .schedule_box .home_team, .cliga_standings .schedule_box .away_team {
+    width: 28%;
+    padding: 0 3px;
+}
+
+.cliga_standings .schedule_box .home_team span, .cliga_standings .schedule_box .away_team span {
+    display: block;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cliga_standings .schedule_box .home_team span a, .cliga_standings .schedule_box .away_team span a{
+    color:inherit;
+    text-transform: uppercase;
+}
+
+.cliga_standings .schedule_box .home_logo, .cliga_standings .schedule_box .away_logo {
+    float: left;
+    width: 11%;
+    overflow: hidden;
+    text-align: center;
+    height: 26px;
+}
+
+.cliga_standings .schedule_box .home_logo img, .cliga_standings .schedule_box .away_logo img {
+    max-width: 90%;
+    height: 100%;
+    width: auto;
+}
+
+.cliga_standings #kiemelt_ligak .schedule_box .result-cont {
+    width: 14%;
+}
+
+.cliga_standings .schedule_box .result {
+    float: left;
+    background-color: #1a82c3;
+    color: #fff;
+    padding: 2px 5px;
+    width: 16%;
+    text-align: center;
+    line-height: 14px;
+    font-size: 12px;
+    float: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 32px;
+    width: 100%;
+    min-width: 45px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cliga_standings .schedule:hover .result {
+    background: #ffffff;
+    color: #071c6e;
+}
+
+.cliga_standings .schedule_box .schedule-info {
+    font-family: Regular !important;
+    font-size: 11px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cliga_standings .schedule_box .schedule-date {
+    display: block;
+    font-size: 12px;
+    font-family: Regular !important;
+}
+
+.cliga_standings .schedule_box .result span:nth-child(2) {
+    font-family: Bold;
+}
+
+.cliga_standings .standings_box table {
+    margin-top: 25px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cliga_standings h1, .cliga_standings h3, .cliga_standings p, .cliga_standings span, .cliga_standings option, .cliga_standings select, .cliga_standings input, .cliga_standings td, .cliga_standings th {
+    font-family: 'Regular';
+}
+
+.cliga_standings .standings_box td, .cliga_standings .standings_box th {
+    color: #494949;
+    height: 30px;
+    position: relative;
+    font-size:14px;
+    text-align:center;
+}
+
+.cliga_standings .standings_box th:nth-child(3), .cliga_standings .standings_box td:nth-child(3) {
+    text-align: left;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+.cliga_standings th.standing_position {
+    text-align: center;
+}
+
+.cliga_standings .standings_box tr td, .cliga_standings .standings_box tr th {
+    border-bottom: 1px solid #b4bbc2;
+}
+
+.cliga_standings .buyticket {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    right: 4px;
+    bottom: 8px;
+}
+
+.cliga_standings div.buyticket {
+    position: relative;
+    bottom: 0;
+    width: 8%;
+    width: 32px;
+}
+
+.cliga_standings .buyticket img {
+    visibility: hidden;
+}
+
+.cliga_standings .buyticket a {
+    display: block;
+    background: url(/images/ticket.new.inverse.png);
+    height: 24px;
+    background-position: bottom center;
+    width: 24px;
+}
+
+.cliga_standings .schedule:hover .buyticket a {
+    background-position: top center;
+}
+
+.cliga_standings td.standing_top_position:before, .cliga_standings th.standing_position:before, .cliga_standings td.standing_position:before, .cliga_standings td.standing_last_position:before {
+    display: block;
+    content: '';
+    width: 3px;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 0;
+}
+
+.cliga_standings th.standing_position:before, .cliga_standings td.standing_position:before {
+    background: #00b1cc;
+}
+
+.cliga_standings td.standing_top_position:before, .cliga_standings td.standing_last_position:before, .cliga_standings td.standing_position:before {
+    background: #1a82c3;
+}
+
+.cliga_standings td.standing_last_position:before {
+    background: #071c6e;
+}
+
+.cliga_standings td.standing_top_position, .cliga_standings td.standing_last_position, .cliga_standings td.standing_position {
+    text-align: center;
+    padding: 2px 0;
+    padding-left: 3px;
+    width: 40px;
+}
+
+.cliga_standings .standings_box img {
+    vertical-align: middle;
+    height: 25px;
+    width: auto;
+}
+
+.cliga_standings .standings_box tbody tr:hover td{
+    background-color: #071c6e;
+    border-bottom: 1px solid #071c6e;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.schedule:hover > .result-cont .result .schedule-points a, .schedule:hover > .result-cont .result .schedule-info a {
+    color: #071c6e !important;
+}
+
+.tab-more-cont {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.tab-more {
+    text-transform: uppercase;
+    color: #494949;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Regular;
+}
+
+.tab-more span {
+    margin-left: 5px;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.schedule-message-cont {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 81px;
+    padding: 30px 0;
+    font-family: 'Regular', sans-serif;
+    font-size: 16px;
+    line-height:20px;
+}
+
+@media screen and (max-width:1500px){
+    .cliga_standings .standings_box table{
+        table-layout:fixed;
+    }
+
+    .cliga_standings .standings_box tr td, .cliga_standings .standings_box tr th{
+        width:25px;
+    }
+
+    .cliga_standings .standings_box th:nth-child(3), .cliga_standings .standings_box td:nth-child(3){
+        width:auto;
+        overflow:hidden;text-overflow:ellipsis;
+        padding-right:5px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .cliga_standings .standings_box tr td, .cliga_standings .standings_box tr th{
+        width:20px;
+    }
+
+    .cliga_standings .standings_box th:nth-child(3), .cliga_standings .standings_box td:nth-child(3){
+        padding-left:10px;
+    }
+
+    .cliga_standings .standings_box th:nth-child(2), .cliga_standings .standings_box td:nth-child(2){
+        width:30px;
+    }
+
+    .cliga_standings #kiemelt_ligak .schedule_box .result-cont{
+        width:52px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .cliga_standings .three-box-container .box{
+        width:100%;
+        border:none;
+        margin-bottom:30px;
+    }
+
+    .cliga_standings .box_title{
+        font-size:20px;
+        line-height:22px;
+    }
+
+    .cliga_standings .selectbox.absolute_select{
+        position:initial;
+    }
+
+    .cliga_standings .container_title{
+        font-size:24px;
+        line-height:28px;
+    }
+
+    .cliga_standings #kiemelt_ligak .schedule_box .result-cont{
+        width:14%;
+    }
+
+    .cliga_standings .schedule_box .result{
+        min-width:auto;
+    }
+}
+
+@media screen and (max-width:360px){
+    .cliga_standings .schedule_box .home_logo, .cliga_standings .schedule_box .away_logo{
+        display:none;
+    }
+}
